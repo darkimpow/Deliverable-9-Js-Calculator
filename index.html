@@ -10,42 +10,46 @@
 
     <body>
         <body class="h-screen bg-slate-700"
-
-    <div class="grid grid-cols-5 grid-rows-4">
-        <table class="calculator" >
-            <tr>
-            <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
-            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
-            </tr>
-            <tr>
-                <td> <input type="button" value="1" onclick="display('1')" /> </td>
-                <td> <input type="button" value="2" onclick="display('2')" /> </td>
-                <td> <input type="button" value="3" onclick="display('3')" /> </td>
-                <td> <input type="button" value="/" onclick="display('/')" /> </td>
-            </tr>
-            <tr>
-                <td> <input type="button" value="4" onclick="display('4')" /> </td>
-                <td> <input type="button" value="5" onclick="display('5')" /> </td>
-                <td> <input type="button" value="6" onclick="display('6')" /> </td>
-                <td> <input type="button" value="-" onclick="display('-')" /> </td>
-            </tr>
-            <tr>
-                <td> <input type="button" value="7" onclick="display('7')" /> </td>
-                <td> <input type="button" value="8" onclick="display('8')" /> </td>
-                <td> <input type="button" value="9" onclick="display('9')" /> </td>
-                <td> <input type="button" value="+" onclick="display('+')" /> </td>
-            </tr>
-            <tr>
-                <td> <input type="button" value="." onclick="display('.')" /> </td>
-                <td> <input type="button" value="0" onclick="display('0')" /> </td>
-                <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
-                <td> <input type="button" value="*" onclick="display('*')" /> </td>
-            </tr>
-
-        </table>
-    </div>
+         id="calculator" class="calculator grid grid-rows-5 grid-flow-col gap-4"> 
+           
+         
+                        <!--calculator css-->
+         <div class="bg-gray-800 border-2 border-gray-900 shadow-2xl rounded-lg">
+           
+            
+            
+                         <!--form begins here-->
+            <form class="border-b-2 border-gray-900">
+              <input type="number" class="bg-transparent p-8 rounded-t-lg outline-none text-2xl text-center text-white font-mono">
+            </form>
 
 
+          <div class="p-3 text-gray-800 grid grid-cols-4 gap-2 text-xl">
+            <button class="font-mono col-span-3 bg-orange-500 hover:bg-red-500 rounded-full p-5">C</button>
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">&divide;</button>
+      
+            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3">1</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3">2</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">3</button>
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">&times;</button>
+      
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">4</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">5</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3">6</button>
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">&minus;</button>
+      
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">7</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">8</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">9</button>
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">&plus;</button>
+      
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">0</button>
+            <button class="font-mono col-span-3 bg-orange-500 hover:bg-purple-400 rounded-full p-5">&equals;</button>
+          </div>
+        </div>
+      
+      </div>s
+   
     
 
 
