@@ -20,31 +20,31 @@
             
                          <!--form begins here-->
             <form class="border-b-2 border-gray-700">
-              <input type="number" class="bg-transparent p-8 rounded-t-lg outline-none text-2xl text-center text-white font-mono">
+              <input id="screen" type="number" class="bg-transparent p-8 rounded-t-lg outline-none text-2xl text-center text-white font-mono">
             </form>
 
                             <!--Buttons will be placed here-->
           <div class="p-3 text-gray-800 grid grid-cols-4 gap-2 text-xl">
-            <button class="font-mono col-span-3 bg-orange-500 hover:bg-red-500 rounded-full p-5">C</button>
-            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">&divide;</button>
+            <button class="font-mono col-span-3 bg-orange-500 hover:bg-red-500 rounded-full p-5" onclick="document.getElementById('screen').value=''">clear</button> 
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value='/'">&divide</button>
       
-            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3">1</button>
-            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3">2</button>
-            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">3</button>
-            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">&times;</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3" onclick="document.getElementById('screen').value='1'">1</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3" onclick="document.getElementById('screen').value='2'">2</button>     
+            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3" onclick="document.getElementById('screen').value='3'">3</button>    
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value='&times'">x</button>
       
-            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">4</button>
-            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">5</button>
-            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3">6</button>
-            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">&minus;</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3" onclick="document.getElementById('screen').value='4'">4</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3" onclick="document.getElementById('screen').value='5'">5</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3"  onclick="document.getElementById('screen').value='6'">6</button>
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value='&minus;'">&minus;</button>
       
-            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">7</button>
-            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">8</button>
-            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3">9</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3" onclick="document.getElementById('screen').value='7'">7</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3" onclick="document.getElementById('screen').value='8'">8</button>
+            <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3" onclick="document.getElementById('screen').value='9'">9</button>
             <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">&plus;</button>
       
-            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">0</button>
-            <button class="font-mono col-span-3 bg-orange-500 hover:bg-purple-400 rounded-full p-5">&equals;</button>
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value='0'">0</button>
+            <button class="font-mono col-span-3 bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value='&equals;'">&equals;</button>
           </div>
         </div>
       
