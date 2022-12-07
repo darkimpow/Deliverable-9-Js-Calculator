@@ -1,11 +1,11 @@
 <script>
 // This function solves the values
-function clearScreen() {
+function solves() {
 document.getElementById("result").value = "";
 }
 
 // This function clear all the values
-function clearScreen() {
+function clear() {
 document.getElementById("result").value = "";
 }
 
