@@ -2,7 +2,15 @@
 <html>
     <head>
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="app.js"></script>
+        <script> 
+        function clr(){
+          document.getElementById('screen').value=""
+        }
+
+        function solve(){ let y= eval document.getElementById('screen').value;
+        document.getElementById('screen').value=y
+        }
+        </script>
     </head>
 
     <body>
@@ -23,7 +31,7 @@
 
                             <!--Buttons will be placed here-->
           <div class="p-3 text-gray-800 grid grid-cols-4 gap-2 text-xl">
-            <button class="font-mono col-span-3 bg-orange-500 hover:bg-red-500 rounded-full p-5" onclick="document.getElementById('screen').value=''">clear</button> 
+            <button class="font-mono col-span-3 bg-orange-500 hover:bg-red-500 rounded-full p-5" onclick="clr()">clear</button> 
             <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value+='/'">/</button>
       
             <button class="font-mono bg-gray-500 hover:bg-green-600 rounded-full p-3" onclick="document.getElementById('screen').value+='2'">2</button>     

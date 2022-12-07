@@ -1,10 +1,8 @@
 <script>
 // This function solves the values
-function solve() {
-                    let z = eval document.getElementById('screen').value
-                    let x =eval(x);
-                    document.getElementById('screen').value=x;
-                 }
+function solve(){ let y= eval document.getElementById('screen').value
+document.getElementById('screen').value=y
+}
 
 // This function clear all the values
 function clr(){
@@ -13,7 +11,7 @@ function clr(){
 
 //This function shows the screen display
 function dis(value){
-    document.getElementById('screen').value+="val"()
+    document.getElementById('screen').value=val
 }
 
 </script>
