@@ -1,3 +1,5 @@
+
+// This function solves the value given
 function solve() {
     let y = eval(document.getElementById('screen').value);
     document.getElementById('screen').value=y;
