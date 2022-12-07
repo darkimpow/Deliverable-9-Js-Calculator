@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css" rel="stylesheet" type="text/css" / > 
         <script src="https://cdn.tailwindcss.com"></script>
         <script type="text/javascript" src="app.js"></script>
-        <h1 class="flex flex-col font-sans items-center Text Editor text-white text-5xl p-10">My Js Calculator</h1>
     </head>
 
     <body>
-        <body class="h-screen bg-slate-700"
+      <h1 class="flex flex-col font-sans items-center Text Editor text-white text-5xl p-10">My Js Calculator</h1>
+        
+      <body class="h-screen bg-slate-700"
          id="calculator" class="calculator grid grid-rows-5 grid-flow-col gap-4"> 
-           
          
                         <!--calculator css-->
          <div class="bg-gray-800 border-2 border-gray-900 shadow-2xl rounded-lg">
@@ -41,10 +39,10 @@
             <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3" onclick="document.getElementById('screen').value='7'">7</button>
             <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3" onclick="document.getElementById('screen').value='8'">8</button>
             <button class="font-mono bg-gray-500 hover:bg-green-600  rounded-full p-3" onclick="document.getElementById('screen').value='9'">9</button>
-            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5">&plus;</button>
+            <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value='+'">+</button>
       
             <button class="font-mono bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value='0'">0</button>
-            <button class="font-mono col-span-3 bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value='&equals;'">&equals;</button>
+            <button class="font-mono col-span-3 bg-orange-500 hover:bg-purple-400 rounded-full p-5" onclick="document.getElementById('screen').value='='">=</button>
           </div>
         </div>
       
